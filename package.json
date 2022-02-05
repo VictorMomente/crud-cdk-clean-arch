@@ -1,8 +1,8 @@
 {
-  "name": "crud-cdk-clean-arch",
+  "name": "clean-cdk",
   "version": "0.1.0",
   "bin": {
-    "crud-cdk-clean-arch": "bin/crud-cdk-clean-arch.js"
+    "crud-cdk-clean-arch": "aws/bin/crud-cdk-clean-arch.ts"
   },
   "scripts": {
     "build": "tsc",
@@ -11,17 +11,29 @@
     "cdk": "cdk"
   },
   "devDependencies": {
+    "@aws-cdk/assertions": "1.137.0",
+    "@types/aws-lambda": "^8.10.89",
+    "@types/express": "^4.17.13",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
+    "aws-cdk": "1.137.0",
+    "git-commit-msg-linter": "^4.0.7",
     "jest": "^26.4.2",
     "ts-jest": "^26.2.0",
-    "aws-cdk": "2.10.0",
     "ts-node": "^9.0.0",
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.10.0",
-    "constructs": "^10.0.0",
+    "@aws-cdk/aws-apigateway": "1.137.0",
+    "@aws-cdk/aws-dynamodb": "1.137.0",
+    "@aws-cdk/aws-iam": "^1.142.0",
+    "@aws-cdk/aws-lambda-nodejs": "1.137.0",
+    "@aws-cdk/aws-ssm": "^1.142.0",
+    "@aws-cdk/core": "1.137.0",
+    "@aws-sdk/client-dynamodb": "^3.49.0",
+    "@aws-sdk/lib-dynamodb": "^3.47.0",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1048.0",
     "source-map-support": "^0.5.16"
   }
 }

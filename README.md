@@ -1,14 +1,22 @@
-# Welcome to your CDK TypeScript project!
+Docs CDK:
+https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-typescript.html
 
-This is a blank project for TypeScript development with CDK.
+Docs DynamoDb CDK:
+https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_lib_dynamodb.html
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+Query:
 
-## Useful commands
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+<!-- const query: QueryCommandInput = {
+  TableName: this.TABLE_NAME,
+  IndexName: 'parentExperienceId',
+  KeyConditionExpression: '#parentExperienceId = :parentExperienceId',
+  ExpressionAttributeNames: {
+    '#parentExperienceId': 'parent_experience_id'
+  },
+  ExpressionAttributeValues: {
+    ':parentExperienceId': parentExperienceId
+  },
+}
+console.log(`> query parent: ${JSON.stringify(query)}`)
+const response = await this.client.send(new QueryCommand(query))
+const experience = response.Items -->
